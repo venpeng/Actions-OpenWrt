@@ -29,7 +29,7 @@ sed -i "s/192\.168\.[0-9]*\.[0-9]*/$WRT_IP/g" $CFG_FILE
 #sed -i 's/192.168.1.1/192.168.11.1/g' package/base-files/files/bin/config_generate
 
 #修改immortalwrt.lan关联IP-immortalwrt才有flash.js,用于luci页面-->系统-->备份与升级页面操作完成之后,重新刷新luci页面
-sed -i "s/192\.168\.[0-9]*\.[0-9]*/$WRT_IP/g" $(find ./feeds/luci/modules/luci-mod-system/ -type f -name "flash.js")
+#sed -i "s/192\.168\.[0-9]*\.[0-9]*/$WRT_IP/g" $(find ./feeds/luci/modules/luci-mod-system/ -type f -name "flash.js")
 #sed -i 's/192.168.1.1/192.168.11.1/g' feeds/luci/modules/luci-mod-system/htdocs/luci-static/resources/view/system/flash.js
 
 # 修改wifi名称
